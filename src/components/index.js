@@ -4,7 +4,7 @@ import Container from "./Container/Container";
 import Logo from "./Logo";
 import LogoutBtn from "./Header/LogoutBtn";
 import Button from "./Button";
-import Protected from "./AuthLayout";
+import AuthLayout from "./AuthLayout";
 import PostForm from "./post-form/PostForm";
 import Input from "./Input";
 import Login from "./Login";
@@ -20,7 +20,7 @@ export {
   Logo,
   LogoutBtn,
   Button,
-  Protected,
+  AuthLayout,
   PostForm,
   Input,
   Login,
