@@ -75,7 +75,7 @@ function PostForm({ post }) {
   }, [watch, slugTransform, setValue]);
 
   return (
-    <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
+    <form onSubmit={handleSubmit(submit)} className="flex flex-wrap shadow p-4">
       <div className="w-2/3 px-2">
         <Input
           label="Title :"
@@ -87,6 +87,7 @@ function PostForm({ post }) {
           label="Slug :"
           placeholder="Slug"
           className="mb-4"
+          readOnly
           {...register("slug", { required: true })}
           onInput={(e) => {
             setValue("slug", slugTransform(e.currentTarget.value), {

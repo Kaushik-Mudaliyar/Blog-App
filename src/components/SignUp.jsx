@@ -28,7 +28,7 @@ function SignUp() {
   return (
     <div className="flex items-center justify-center">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}
+        className={`mx-auto w-md max-w-lg bg-white shadow-md rounded-xl h-full p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-25">
@@ -38,7 +38,7 @@ function SignUp() {
         <h2 className="text-center text-2xl font-bold leading-tight">
           Sign up to create account
         </h2>
-        <p className="mt-2 text-center text-base text-black/60">
+        <p className="mt-2 text-center text-base text-black/70 mb-4">
           Already have an account?&nbsp;
           <Link
             to="/login"
@@ -52,14 +52,12 @@ function SignUp() {
         <form onSubmit={handleSubmit(create)}>
           <div className="space-y-5">
             <Input
-              label="Full Name: "
               placeholder="Enter your full name"
               {...register("name", {
                 required: true,
               })}
             />
             <Input
-              label="Email: "
               placeholder="Enter your email"
               type="email"
               {...register("email", {
@@ -72,7 +70,6 @@ function SignUp() {
               })}
             />
             <Input
-              label="Password: "
               type="password"
               placeholder="Enter your password"
               {...register("password", {

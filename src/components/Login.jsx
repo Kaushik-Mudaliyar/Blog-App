@@ -29,7 +29,7 @@ function Login() {
   return (
     <div className="flex items-center justify-center w-full">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}
+        className={`mx-auto w-full max-w-lg bg-white shadow-md rounded-xl p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-25">
@@ -52,7 +52,6 @@ function Login() {
         <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
             <Input
-              label="Email : "
               placeholder="Enter your Email"
               type="email"
               {...register("email", {
@@ -65,7 +64,6 @@ function Login() {
               })}
             />
             <Input
-              label="Password : "
               placeholder="Enter your password"
               {...register("password", {
                 required: true,
